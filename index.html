@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>BMI</title>
+	</head>
+	<body>
+		<p>Wie groß bist Du:
+		<input type="text" id="Größe">
+		<br>
+		Wie schwer bist Du:
+		<input type="text" id="Gewicht">
+		<br>
+		<button onclick="berechneBMI();">Rechne</button>
+		<div id="ausgabe"></div>
+		<script>
+			function berechneBMI() {
+				var größenText   = document.getElementById("Größe").value;
+				var gewichtText = document.getElementById("Gewicht").value;
+				var größe = parseFloat(größenText);
+				var gewicht = parseFloat(gewichtText);
+				var bmi = gewicht / (größe*größe);
+				var ausgabe = document.getElementById("ausgabe");
+				ausgabe.innerHTML = bmi;
+			}
+		</script>
+	</body>
+</html>
