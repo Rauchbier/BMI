@@ -18,4 +18,5 @@
     </author>
     <gap:platform name="android" />
     <gap:platform name="winphone" />
+    <gap:platform name="ios" />
 </widget>
